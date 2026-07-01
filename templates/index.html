@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orbit | Move Work Forward</title>
+  <meta
+    name="description"
+    content="Orbit helps modern teams organize work, automate workflows, and deliver results faster."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <header class="navbar">
+    <a href="#" class="brand">
+      <span class="brand-icon">O</span>
+      <span>orbit</span>
+    </a>
+
+    <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Open navigation">
+      ☰
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#features">Features</a>
+      <a href="#workflow">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#pricing" class="nav-cta">Start free</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content reveal">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Built for ambitious teams
+        </div>
+
+        <h1>
+          Turn scattered work into
+          <span>serious momentum.</span>
+        </h1>
+
+        <p>
+          Orbit gives your team one elegant workspace to plan projects,
+          automate routine work, and stay focused on what moves the business forward.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#pricing" class="primary-button">
+            Start building for free
+            <span>→</span>
+          </a>
+
+          <a href="#workflow" class="secondary-button">
+            See how it works
+            <span>▶</span>
+          </a>
+        </div>
+
+        <div class="hero-proof">
+          <div class="avatar-stack">
+            <span>J</span>
+            <span>M</span>
+            <span>A</span>
+            <span>R</span>
+          </div>
+          <p>Trusted by fast-moving teams around the world.</p>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="dashboard-card">
+          <div class="dashboard-header">
+            <div>
+              <p class="small-label">TEAM OVERVIEW</p>
+              <h3>Product Launch</h3>
+            </div>
+            <button class="more-button">•••</button>
+          </div>
+
+          <div class="progress-section">
+            <div class="progress-row">
+              <span>Launch progress</span>
+              <strong>78%</strong>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+
+          <div class="dashboard-grid">
+            <div class="metric-card">
+              <span class="metric-icon purple">✓</span>
+              <div>
+                <strong>24</strong>
+                <p>Tasks completed</p>
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <span class="metric-icon green">↗</span>
+              <div>
+                <strong>+36%</strong>
+                <p>Team velocity</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="activity-card">
+            <div class="activity-header">
+              <h4>Recent activity</h4>
+              <span>View all</span>
+            </div>
+
+            <div class="activity-item">
+              <span class="activity-avatar blue">A</span>
+              <p><strong>Amara</strong> completed campaign review</p>
+              <time>2m</time>
+            </div>
+
+            <div class="activity-item">
+              <span class="activity-avatar orange">D</span>
+              <p><strong>David</strong> created sprint planning board</p>
+              <time>8m</time>
+            </div>
+
+            <div class="activity-item">
+              <span class="activity-avatar pink">K</span>
+              <p><strong>Kemi</strong> invited a new teammate</p>
+              <time>14m</time>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-card team-card">
+          <span class="small-label">TEAM HEALTH</span>
+          <strong>Excellent</strong>
+          <div class="health-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="floating-card notification-card">
+          <span class="notification-icon">✓</span>
+          <div>
+            <strong>Automation complete</strong>
+            <p>Weekly report delivered.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logo-section reveal">
+      <p>BUILT FOR PEOPLE DOING THEIR BEST WORK</p>
+
+      <div class="logo-list">
+        <span>northstar</span>
+        <span>Vertex</span>
+        <span>peak</span>
+        <span>frame</span>
+        <span>lattice</span>
+      </div>
+    </section>
+
+    <section class="features-section" id="features">
+      <div class="section-intro reveal">
+        <span class="eyebrow">ONE PLATFORM. LESS CHAOS.</span>
+        <h2>Everything your team needs to move with confidence.</h2>
+        <p>
+          Replace disconnected spreadsheets, status meetings, and manual updates
+          with a single source of truth for your work.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card reveal">
+          <div class="feature-icon purple-bg">✦</div>
+          <h3>Plan with clarity</h3>
+          <p>
+            Build flexible workflows, prioritize initiatives, and give every project a clear owner.
+          </p>
+          <a href="#">Explore planning <span>→</span></a>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-icon blue-bg">⚡</div>
+          <h3>Automate the busywork</h3>
+          <p>
+            Create powerful automations that keep tasks moving without constant follow-ups.
+          </p>
+          <a href="#">Explore automation <span>→</span></a>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-icon orange-bg">◌</div>
+          <h3>See the full picture</h3>
+          <p>
+            Track team progress, identify blockers, and make smarter decisions with live insights.
+          </p>
+          <a href="#">Explore insights <span>→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="workflow-section" id="workflow">
+      <div class="workflow-content reveal">
+        <span class="eyebrow">WORK SMARTER, TOGETHER</span>
+        <h2>From idea to impact in one connected workflow.</h2>
+        <p>
+          Orbit brings planning, collaboration, automation, and reporting together so work never gets lost.
+        </p>
+
+        <div class="workflow-list">
+          <div class="workflow-item active">
+            <span>01</span>
+            <div>
+              <h4>Capture your ideas</h4>
+              <p>Turn rough thoughts into organized projects in seconds.</p>
+            </div>
+          </div>
+
+          <div class="workflow-item">
+            <span>02</span>
+            <div>
+              <h4>Align your team</h4>
+              <p>Assign ownership, set priorities, and keep everyone informed.</p>
+            </div>
+          </div>
+
+          <div class="workflow-item">
+            <span>03</span>
+            <div>
+              <h4>Ship your best work</h4>
+              <p>Use automation and insights to deliver on time, every time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="workflow-visual reveal">
+        <div class="workflow-window">
+          <div class="window-sidebar">
+            <span class="sidebar-logo">O</span>
+            <span class="sidebar-active">⌂</span>
+            <span>◫</span>
+            <span>◌</span>
+            <span>⚙</span>
+          </div>
+
+          <div class="window-main">
+            <div class="window-topbar">
+              <div>
+                <p>Projects / Product</p>
+                <h3>Q3 Launch Plan</h3>
+              </div>
+              <button>+ New task</button>
+            </div>
+
+            <div class="kanban-board">
+              <div class="kanban-column">
+                <div class="column-title">
+                  <span>Backlog</span>
+                  <small>4</small>
+                </div>
+
+                <div class="task-card">
+                  <span class="task-tag purple-tag">Design</span>
+                  <h4>Finalize product page</h4>
+                  <div class="task-footer">
+                    <span class="mini-avatar">A</span>
+                    <span>Jun 30</span>
+                  </div>
+                </div>
+
+                <div class="task-card">
+                  <span class="task-tag blue-tag">Research</span>
+                  <h4>Review customer feedback</h4>
+                  <div class="task-footer">
+                    <span class="mini-avatar orange-avatar">D</span>
+                    <span>Jul 02</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="kanban-column">
+                <div class="column-title">
+                  <span>In progress</span>
+                  <small>3</small>
+                </div>
+
+                <div class="task-card highlight-task">
+                  <span class="task-tag green-tag">Marketing</span>
+                  <h4>Launch email campaign</h4>
+                  <div class="task-footer">
+                    <span class="mini-avatar pink-avatar">K</span>
+                    <span>Today</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="kanban-column">
+                <div class="column-title">
+                  <span>Complete</span>
+                  <small>6</small>
+                </div>
+
+                <div class="task-card completed-task">
+                  <span class="check-circle">✓</span>
+                  <h4>Define launch goals</h4>
+                </div>
+
+                <div class="task-card completed-task">
+                  <span class="check-circle">✓</span>
+                  <h4>Set campaign timeline</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section reveal">
+      <div class="quote-mark">“</div>
+      <blockquote>
+        Orbit gave us a shared language for execution. We spend less time chasing updates
+        and more time delivering meaningful results.
+      </blockquote>
+
+      <div class="testimonial-person">
+        <div class="person-avatar">M</div>
+        <div>
+          <strong>Marcus Bennett</strong>
+          <span>VP of Operations, Northstar</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-section" id="pricing">
+      <div class="section-intro reveal">
+        <span class="eyebrow">SIMPLE, TRANSPARENT PRICING</span>
+        <h2>Start free. Scale when you are ready.</h2>
+
+        <div class="billing-toggle">
+          <span class="billing-label active" data-plan="monthly">Monthly</span>
+          <button id="billingToggle" class="toggle-button" aria-label="Toggle yearly pricing">
+            <span></span>
+          </button>
+          <span class="billing-label" data-plan="yearly">
+            Yearly <small>Save 20%</small>
+          </span>
+        </div>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="pricing-card reveal">
+          <span class="plan-name">Starter</span>
+          <p>For individuals and small teams getting organized.</p>
+
+          <div class="price">
+            <span class="currency">$</span>
+            <strong data-monthly="0" data-yearly="0">0</strong>
+            <span class="period">/ month</span>
+          </div>
+
+          <a href="#contact" class="outline-button">Get started free</a>
+
+          <ul>
+            <li>Up to 5 team members</li>
+            <li>3 active projects</li>
+            <li>Basic automations</li>
+            <li>Community support</li>
+          </ul>
+        </article>
+
+        <article class="pricing-card featured reveal">
+          <div class="popular-label">MOST POPULAR</div>
+          <span class="plan-name">Growth</span>
+          <p>For growing teams that need more speed and visibility.</p>
+
+          <div class="price">
+            <span class="currency">$</span>
+            <strong data-monthly="19" data-yearly="15">19</strong>
+            <span class="period">/ user / month</span>
+          </div>
+
+          <a href="#contact" class="primary-button full-width">Start 14-day free trial</a>
+
+          <ul>
+            <li>Unlimited projects</li>
+            <li>Advanced automations</li>
+            <li>Analytics dashboards</li>
+            <li>Priority support</li>
+          </ul>
+        </article>
+
+        <article class="pricing-card reveal">
+          <span class="plan-name">Enterprise</span>
+          <p>For organizations that need scale, security, and control.</p>
+
+          <div class="enterprise-price">Let’s talk</div>
+
+          <a href="#contact" class="outline-button">Contact sales</a>
+
+          <ul>
+            <li>Unlimited workspaces</li>
+            <li>Advanced security controls</li>
+            <li>Custom integrations</li>
+            <li>Dedicated success manager</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+      <div class="cta-content reveal">
+        <span class="eyebrow">YOUR BEST WORK STARTS HERE</span>
+        <h2>Ready to build momentum?</h2>
+        <p>Join teams using Orbit to plan smarter, move faster, and deliver more.</p>
+
+        <form id="waitlistForm" class="waitlist-form">
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your work email"
+            required
+            aria-label="Email address"
+          />
+          <button type="submit" class="primary-button">Join the waitlist</button>
+        </form>
+
+        <p id="formMessage" class="form-message"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="brand">
+      <span class="brand-icon">O</span>
+      <span>orbit</span>
+    </a>
+
+    <p>© 2026 Orbit, Inc. Built for better work.</p>
+
+    <div class="footer-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
