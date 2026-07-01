@@ -41,4 +41,4 @@ jobs:
             ${{ steps.image.output.image_name }}
             $ {{ env.DOCKERHUB_IMAGE }}:dev
           cache-from: type=gha
-          cache-to: type:gha,mode=max
+          cache-to: type=gha,mode=max
