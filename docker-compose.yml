@@ -1,0 +1,36 @@
+services:
+  product-page:
+    container_name: product-page
+    image: IMAGE_NAME
+    restart: unless-stopped
+
+    expose:
+      - "5000"
+
+    networks:
+      - app-network
+  
+  product_tunnel:
+    image: cloudflare/cloudflared:latest
+    container_name: product_tunnel
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+
+    environment:
+      TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN}
+
+    depends_on:
+      - product-page
+    
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.0.0/24
+          gateway: 172.28.0.1
+
