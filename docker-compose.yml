@@ -1,7 +1,7 @@
 services:
   product-page:
     container_name: product-page
-    image: IMAGE_NAME
+    image: ${IMAGE_NAME}
     restart: unless-stopped
 
     expose:
