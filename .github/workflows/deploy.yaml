@@ -6,7 +6,7 @@ on:
       - dev
 
 env:
-  DOCKERHUB_IMAGE: ${{ secrets.DOCKERHUB_USERNAME }}/product-page
+  DOCKERHUB_IMAGE: idrisniyi94/product-page
 
 jobs:
   build:
