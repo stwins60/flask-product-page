@@ -52,7 +52,6 @@ jobs:
     name: Deploy to dev
     needs: build
     runs-on: self-hosted
-    environment: development
 
     env:
       IMAGE_NAME: ${{ needs.build.outputs.image_name }}
