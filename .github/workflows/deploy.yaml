@@ -13,9 +13,6 @@ jobs:
     name: Build and Push Image
     runs-on: self-hosted
 
-    outputs:
-      image_name: ${{ steps.image.outputs.image_name }}
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
