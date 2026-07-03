@@ -43,7 +43,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ steps.image.output.image_name }}
+            ${{ steps.image.outputs.image_name }}
             ${{ env.DOCKERHUB_IMAGE }}:dev
           cache-from: type=gha
           cache-to: type=gha,mode=max
@@ -55,7 +55,7 @@ jobs:
 
     env:
       IMAGE_NAME: ${{ needs.build.outputs.image_name }}
-      CLOUDFLARE_TUNNEL_TOKEN: $ {{ secrets.CLOUDFLARE_TUNNEL_TOKEN }}
+      CLOUDFLARE_TUNNEL_TOKEN: ${{ secrets.CLOUDFLARE_TUNNEL_TOKEN }}
     
     steps:
       - name: Checkout deployment files
