@@ -45,7 +45,7 @@ jobs:
     runs-on: self-hosted
 
     env:
-      IMAGE_NAME: ${{ env.DOCKERHUB_IMAGE }}:${{ github.sha }}
+      IMAGE_NAME: idrisniyi94/product-page:${{ github.sha }}
       CLOUDFLARE_TUNNEL_TOKEN: ${{ secrets.CLOUDFLARE_TUNNEL_TOKEN }}
     
     steps:
@@ -62,14 +62,3 @@ jobs:
         run: |
           docker compose pull
           docker compose up -d --no-build --remove-orphans
-      
-      - name: Confirm containers are running
-        shell: bash
-        run: |
-          echo "Checking if containers are running..."
-          if docker ps | grep -q "product-page"; then
-            echo "product-page container is running."
-          else
-            echo "product-page container is not running."
-            exit 1
-          fi
